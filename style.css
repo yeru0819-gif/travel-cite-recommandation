@@ -1,0 +1,141 @@
+/* [개념 요약] 초기화 및 부드러운 스크롤 설정 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth; /* 앵커 이동 시 부드럽게 스크롤 */
+}
+
+body {
+  font-family: 'Pretendard', sans-serif;
+  background-color: #f5e6da; /* 보조 컬러: 베이지 */
+  color: #5c3d2e; /* 포인트 컬러: 브라운 */
+  line-height: 1.6;
+}
+
+/* [요청 반영] 네비게이션 바: 로고 제거, 중앙 정렬, 넉넉한 간격 */
+header {
+  background-color: #7a9e7e; /* 메인 컬러: 올리브 그린 */
+  padding: 25px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.global-nav ul {
+  display: flex;
+  justify-content: center; /* 메뉴 중앙 정렬 */
+  list-style: none;
+  gap: 70px; /* 메뉴 간 간격 넉넉하게 설정 */
+}
+
+.global-nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: color 0.3s;
+}
+
+.global-nav a:hover {
+  color: #f5e6da;
+}
+
+/* 메인 페이지 히어로 섹션 */
+.hero {
+  height: 100vh;
+  /* [사진 연결] 아래 url 안에 배경 사진 파일명을 넣으세요 */
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url('1.jpg') no-repeat center/cover fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  margin-bottom: 10px;
+}
+
+/* [요청 반영] Welcome 섹션: 중앙 정렬 */
+.welcome {
+  padding: 100px 20px;
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.welcome h2 {
+  font-size: 2.5rem;
+  margin-bottom: 25px;
+}
+
+/* [요청 반영] Quick Test 섹션: 배경색 #f4efe5 적용 */
+.quick-test-summary {
+  background-color: #f4efe5;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.mbti-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  max-width: 1200px;
+  margin: 40px auto 0;
+}
+
+.mbti-card {
+  background: white;
+  padding: 30px 20px;
+  border-radius: 15px;
+  border-bottom: 5px solid #7a9e7e;
+}
+
+/* Introduce 페이지 레이아웃 (Aside + Article) */
+.intro-layout {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 20px;
+  gap: 60px;
+}
+
+.side-menu {
+  flex: 1;
+  position: sticky;
+  top: 130px;
+  height: fit-content;
+}
+
+.side-menu a {
+  display: block;
+  padding: 15px;
+  background-color: #5c3d2e;
+  color: white;
+  margin-bottom: 12px;
+  border-radius: 30px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.content-area {
+  flex: 3;
+}
+
+.intro-section {
+  padding: 100px 0;
+  border-bottom: 1px solid #7a9e7e;
+}
+
+.intro-section h3 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  border-left: 8px solid #7a9e7e;
+  padding-left: 15px;
+}
