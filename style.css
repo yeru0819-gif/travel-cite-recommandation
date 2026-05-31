@@ -7,7 +7,7 @@
 }
 
 body {
-  font-family: 'Pretendard', sans-serif;
+  font-family: "Pretendard", sans-serif;
   background-color: #f5e6da; /* 보조 컬러: 베이지 */
   color: #5c3d2e; /* 포인트 컬러: 브라운 */
   line-height: 1.6;
@@ -47,7 +47,7 @@ header {
   /* [사진 연결] 아래 url 안에 배경 사진 파일명을 넣으세요 */
   background:
     linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url('1.jpg') no-repeat center/cover fixed;
+    url("1.jpg") no-repeat center/cover fixed;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -131,6 +131,7 @@ header {
 .intro-section {
   padding: 100px 0;
   border-bottom: 1px solid #7a9e7e;
+  background-color: #f4efe5;
 }
 
 .intro-section h3 {
