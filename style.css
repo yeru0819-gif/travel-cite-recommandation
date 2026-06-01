@@ -133,6 +133,9 @@ header {
 .content-area h3 {
   margin-left: 10px;
 }
+.content-area ul {
+  margin-left: 10px;
+}
 .intro-section {
   padding: 100px;
   border-bottom: 1px solid #7a9e7e;
