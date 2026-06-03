@@ -1,21 +1,20 @@
-/* [개념 요약] 초기화 및 부드러운 스크롤 설정 */
+/* 전체 페이지 */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  scroll-behavior: smooth; /* 앵커 이동 시 부드럽게 스크롤 */
+  scroll-behavior: smooth;
 }
 
 body {
   font-family: 'Pretendard', sans-serif;
-  background-color: #f5e6da; /* 보조 컬러: 베이지 */
-  color: #5c3d2e; /* 포인트 컬러: 브라운 */
+  background-color: #f5e6da;
+  color: #5c3d2e;
   line-height: 1.6;
 }
 
-/* [요청 반영] 네비게이션 바: 로고 제거, 중앙 정렬, 넉넉한 간격 */
 header {
-  background-color: #7a9e7e; /* 메인 컬러: 올리브 그린 */
+  background-color: #7a9e7e;
   padding: 25px 0;
   position: sticky;
   top: 0;
@@ -24,9 +23,10 @@ header {
 
 .global-nav ul {
   display: flex;
-  justify-content: center; /* 메뉴 중앙 정렬 */
+  justify-content: center;
+  align-items: center;
   list-style: none;
-  gap: 70px; /* 메뉴 간 간격 넉넉하게 설정 */
+  gap: 70px;
 }
 
 .global-nav a {
@@ -40,11 +40,9 @@ header {
 .global-nav a:hover {
   color: #f5e6da;
 }
-
-/* 메인 페이지 히어로 섹션 */
+/* index.html */
 .hero {
   height: 100vh;
-  /* [사진 연결] 아래 url 안에 배경 사진 파일명을 넣으세요 */
   background:
     linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url('1.jpg') no-repeat center/cover fixed;
@@ -61,7 +59,6 @@ header {
   margin-bottom: 10px;
 }
 
-/* [요청 반영] Welcome 섹션: 중앙 정렬 */
 .welcome {
   padding: 100px 20px;
   text-align: center;
@@ -74,7 +71,6 @@ header {
   margin-bottom: 25px;
 }
 
-/* [요청 반영] Quick Test 섹션: 배경색 #f4efe5 적용 */
 .quick-test-summary {
   background-color: #f4efe5;
   padding: 100px 20px;
@@ -95,8 +91,7 @@ header {
   border-radius: 15px;
   border-bottom: 5px solid #7a9e7e;
 }
-
-/* Introduce 페이지 레이아웃 (Aside + Article) */
+/* introduce.html */
 .intro-layout {
   display: flex;
   max-width: 1200px;
@@ -127,17 +122,14 @@ header {
 .content-area {
   flex: 3;
 }
-.content-area p {
-  margin-left: 10px;
-}
-.content-area h3 {
-  margin-left: 10px;
-}
+
+.content-area p,
+.content-area h3,
 .content-area li {
   margin-left: 10px;
 }
 
-git .intro-section {
+.intro-section {
   padding: 100px;
   border-bottom: 1px solid #7a9e7e;
   background-color: #f4efe5;
@@ -148,4 +140,155 @@ git .intro-section {
   margin-bottom: 30px;
   border-left: 8px solid #7a9e7e;
   padding-left: 15px;
+}
+/* quicktest.html */
+input[type='radio'][name='test-tab'] {
+  display: none;
+}
+
+.test-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 40px 0;
+}
+
+.tab-btn,
+.tab-btn-active {
+  padding: 12px 25px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+  background-color: #5c3d2e;
+  color: #f5e6da;
+}
+
+.tab-btn-active,
+#tab-ei:checked ~ .test-tabs .btn-ei,
+#tab-sn:checked ~ .test-tabs .btn-sn,
+#tab-tf:checked ~ .test-tabs .btn-tf,
+#tab-jp:checked ~ .test-tabs .btn-jp {
+  background-color: #7a9e7e;
+  color: white;
+}
+
+.ei-test,
+.sn-test,
+.tf-test,
+.jp-test,
+.result-test {
+  display: none;
+  border: none;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+#tab-ei:checked ~ .test-sections .ei-test,
+#tab-sn:checked ~ .test-sections .sn-test,
+#tab-tf:checked ~ .test-sections .tf-test,
+#tab-jp:checked ~ .test-sections .jp-test,
+#tab-result:checked ~ .test-sections .result-test {
+  display: block;
+  animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+legend {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: #7a9e7e;
+  margin-bottom: 25px;
+  padding: 0 10px;
+}
+
+.q-box {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  border-left: 8px solid #7a9e7e;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.next-btn,
+.result-trigger {
+  display: none;
+  width: fit-content;
+  margin: 30px auto 0;
+  border-radius: 40px;
+  font-weight: 800;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: none;
+}
+
+.next-btn {
+  padding: 15px 50px;
+  background-color: #7a9e7e;
+  color: white;
+  font-size: 1rem;
+}
+
+.result-trigger {
+  padding: 22px 80px;
+  background-color: #5c3d2e;
+  color: white;
+  font-size: 1.5rem;
+  box-shadow: 0 5px 15px rgba(92, 61, 46, 0.3);
+}
+
+.ei-test:valid .next-btn,
+.sn-test:valid .next-btn,
+.tf-test:valid .next-btn,
+.jp-test:valid .next-btn,
+.jp-test:valid .result-trigger {
+  display: block;
+}
+
+.next-btn:hover,
+.result-trigger:hover {
+  transform: translateY(-3px);
+  filter: brightness(1.1);
+}
+
+.result-test {
+  background-color: #f4efe5;
+  padding: 50px;
+  border-radius: 20px;
+  text-align: center;
+  border: 2px dashed #7a9e7e;
+}
+
+.result-test h3 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #5c3d2e;
+}
+
+.mock-percent {
+  margin-top: 30px;
+  padding: 25px;
+  background: white;
+  border-radius: 15px;
+  display: inline-block;
+  min-width: 300px;
+}
+
+.mock-percent p {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #7a9e7e;
 }
