@@ -307,3 +307,59 @@ legend {
   font-weight: bold;
   color: #7a9e7e;
 }
+
+/* ======================
+   TRAVEL MAP PAGE
+====================== */
+
+.travelmap-layout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+
+  padding-top: 80px;
+}
+
+.mbti-column {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.mbti-column a {
+  text-decoration: none;
+  color: #5c3d2e;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.mbti-column a:hover {
+  color: #7a9e7e;
+}
+
+.map-center img {
+  width: 750px;
+  height: auto;
+}
+
+/* ======================
+   MBTI TRAVEL PAGE
+====================== */
+
+.mbti-page {
+  text-align: center;
+  padding-top: 60px;
+}
+
+.mbti-page h1 {
+  margin-bottom: 20px;
+}
+
+.mbti-page p {
+  margin-bottom: 40px;
+}
+
+.map-container {
+  text-align: center;
+}
