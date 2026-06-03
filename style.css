@@ -40,6 +40,17 @@ header {
 .global-nav a:hover {
   color: #f5e6da;
 }
+footer {
+  background-color: #5c3d2e;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 50px;
+}
+
+footer p {
+  margin: 0;
+}
 /* index.html 적용 CSS*/
 .hero {
   height: 100vh;
@@ -90,6 +101,11 @@ header {
   padding: 30px 20px;
   border-radius: 15px;
   border-bottom: 5px solid #7a9e7e;
+}
+.quick-test-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
 }
 
 /* introduce.html 적용 CSS*/
