@@ -1,59 +1,45 @@
 <!doctype html>
 <html lang="ko">
-<head>
-  <meta charset="UTF-8">
-  <title>ENTP 추천 여행지</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <title>ENTP 추천 여행지</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="global-nav">
+        <ul>
+          <li><a href="index.html">MAIN</a></li>
+          <li><a href="introduce.html">INTRODUCE</a></li>
+          <li><a href="quicktest.html">QUICK TEST</a></li>
+          <li><a href="type.html">TYPE</a></li>
+          <li><a href="travelmap.html">TRAVEL MAP</a></li>
+        </ul>
+      </nav>
+    </header>
 
-<header>
-  <nav class="global-nav">
-    <ul>
-      <li><a href="index.html">MAIN</a></li>
-      <li><a href="introduce.html">INTRODUCE</a></li>
-      <li><a href="quicktest.html">QUICK TEST</a></li>
-      <li><a href="type.html">TYPE</a></li>
-      <li><a href="travelmap.html">TRAVEL MAP</a></li>
-    </ul>
-  </nav>
-</header>
+    <main class="mbti-page">
+      <h1>ENTP 추천 여행지</h1>
 
-<main class="mbti-page">
+      <p>
+        인천광역시, 경상남도, 경기도 지역이 준비되어 있습니다.<br />
+        지도에서 해당 지역을 클릭해 보세요.
+      </p>
 
-  <h1>ENTP 추천 여행지</h1>
+      <div class="map-container">
+        <img src="map.png" usemap="#entpmap" alt="대한민국 지도" />
 
-  <p>
-    인천광역시, 경상남도, 경기도 지역이 준비되어 있습니다.<br>
-    지도에서 해당 지역을 클릭해 보세요.
-  </p>
+        <map name="entpmap">
+          <!-- 인천 -->
+          <area shape="rect" coords="648,222,720,271" href="entp/entp_incheon.html" />
 
-  <div class="map-container">
+          <!-- 경남 -->
+          <area shape="rect" coords="829,587,906,634" href="entp/entp_gyeongnam.html" />
 
-    <img src="map.png" usemap="#entpmap" alt="대한민국 지도">
-
-    <map name="entpmap">
-
-      <!-- 인천 -->
-      <area shape="rect"
-      coords="648,222,720,271"
-      href="entp_incheon.html">
-
-      <!-- 경남 -->
-      <area shape="rect"
-      coords="829,587,906,634"
-      href="entp_gyeongnam.html">
-
-      <!-- 경기 -->
-      <area shape="rect"
-      coords="662,167,737,205"
-      href="entp_gyeonggi.html">
-
-    </map>
-
-  </div>
-
-</main>
-
-</body>
+          <!-- 경기 -->
+          <area shape="rect" coords="662,167,737,205" href="entp/entp_gyeonggi.html" />
+        </map>
+      </div>
+    </main>
+  </body>
 </html>

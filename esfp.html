@@ -1,59 +1,45 @@
 <!doctype html>
 <html lang="ko">
-<head>
-  <meta charset="UTF-8">
-  <title>ESFP 추천 여행지</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <title>ESFP 추천 여행지</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="global-nav">
+        <ul>
+          <li><a href="index.html">MAIN</a></li>
+          <li><a href="introduce.html">INTRODUCE</a></li>
+          <li><a href="quicktest.html">QUICK TEST</a></li>
+          <li><a href="type.html">TYPE</a></li>
+          <li><a href="travelmap.html">TRAVEL MAP</a></li>
+        </ul>
+      </nav>
+    </header>
 
-<header>
-  <nav class="global-nav">
-    <ul>
-      <li><a href="index.html">MAIN</a></li>
-      <li><a href="introduce.html">INTRODUCE</a></li>
-      <li><a href="quicktest.html">QUICK TEST</a></li>
-      <li><a href="type.html">TYPE</a></li>
-      <li><a href="travelmap.html">TRAVEL MAP</a></li>
-    </ul>
-  </nav>
-</header>
+    <main class="mbti-page">
+      <h1>ESFP 추천 여행지</h1>
 
-<main class="mbti-page">
+      <p>
+        강원도, 전라북도, 전라남도 지역이 준비되어 있습니다.<br />
+        지도에서 해당 지역을 클릭해 보세요.
+      </p>
 
-  <h1>ESFP 추천 여행지</h1>
+      <div class="map-container">
+        <img src="map.png" usemap="#esfpmap" alt="대한민국 지도" />
 
-  <p>
-    강원도, 전라북도, 전라남도 지역이 준비되어 있습니다.<br>
-    지도에서 해당 지역을 클릭해 보세요.
-  </p>
+        <map name="esfpmap">
+          <!-- 강원 -->
+          <area shape="rect" coords="843,195,916,239" href="esfp/esfp_gangwon.html" />
 
-  <div class="map-container">
+          <!-- 전북 -->
+          <area shape="rect" coords="680,523,757,569" href="esfp/esfp_jeonbuk.html" />
 
-    <img src="map.png" usemap="#esfpmap" alt="대한민국 지도">
-
-    <map name="esfpmap">
-
-      <!-- 강원 -->
-      <area shape="rect"
-      coords="843,195,916,239"
-      href="esfp_gangwon.html">
-
-      <!-- 전북 -->
-      <area shape="rect"
-      coords="680,523,757,569"
-      href="esfp_jeonbuk.html">
-
-      <!-- 전남 -->
-      <area shape="rect"
-      coords="645,670,722,719"
-      href="esfp_jeonnam.html">
-
-    </map>
-
-  </div>
-
-</main>
-
-</body>
+          <!-- 전남 -->
+          <area shape="rect" coords="645,670,722,719" href="esfp/esfp_jeonnam.html" />
+        </map>
+      </div>
+    </main>
+  </body>
 </html>
