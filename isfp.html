@@ -1,54 +1,42 @@
 <!doctype html>
 <html lang="ko">
-<head>
-  <meta charset="UTF-8">
-  <title>ISFP 추천 여행지</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <title>ISFP 추천 여행지</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="global-nav">
+        <ul>
+          <li><a href="index.html">MAIN</a></li>
+          <li><a href="introduce.html">INTRODUCE</a></li>
+          <li><a href="quicktest.html">QUICK TEST</a></li>
+          <li><a href="type.html">TYPE</a></li>
+          <li><a href="travelmap.html">TRAVEL MAP</a></li>
+        </ul>
+      </nav>
+    </header>
 
-<header>
-  <nav class="global-nav">
-    <ul>
-      <li><a href="index.html">MAIN</a></li>
-      <li><a href="introduce.html">INTRODUCE</a></li>
-      <li><a href="quicktest.html">QUICK TEST</a></li>
-      <li><a href="type.html">TYPE</a></li>
-      <li><a href="travelmap.html">TRAVEL MAP</a></li>
-    </ul>
-  </nav>
-</header>
+    <main class="mbti-page">
+      <h1>ISFP 추천 여행지</h1>
 
-<main class="mbti-page">
+      <p>
+        경기도, 인천광역시 지역이 준비되어 있습니다.<br />
+        지도에서 해당 지역을 클릭해 보세요.
+      </p>
 
-  <h1>ISFP 추천 여행지</h1>
+      <div class="map-container">
+        <img src="map.png" usemap="#isfpmap" alt="대한민국 지도" />
 
-  <p>
-    경기도, 인천광역시 지역이 준비되어 있습니다.<br>
-    지도에서 해당 지역을 클릭해 보세요.
-  </p>
+        <map name="isfpmap">
+          <!-- 경기 -->
+          <area shape="rect" coords="662,167,737,205" href="isfp/isfp_gyeonggi.html" />
 
-  <div class="map-container">
-
-    <img src="map.png" usemap="#isfpmap" alt="대한민국 지도">
-
-    <map name="isfpmap">
-
-      <!-- 경기 -->
-      <area shape="rect"
-      coords="662,167,737,205"
-      href="isfp_gyeonggi.html">
-
-      <!-- 인천 -->
-      <area shape="rect"
-      coords="648,222,720,271"
-      href="isfp_incheon.html">
-
-    </map>
-
-  </div>
-
-</main>
-
-</body>
+          <!-- 인천 -->
+          <area shape="rect" coords="648,222,720,271" href="isfp/isfp_incheon.html" />
+        </map>
+      </div>
+    </main>
+  </body>
 </html>

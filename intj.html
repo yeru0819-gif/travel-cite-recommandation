@@ -1,64 +1,48 @@
 <!doctype html>
 <html lang="ko">
-<head>
-  <meta charset="UTF-8">
-  <title>INTJ 추천 여행지</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <title>INTJ 추천 여행지</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="global-nav">
+        <ul>
+          <li><a href="index.html">MAIN</a></li>
+          <li><a href="introduce.html">INTRODUCE</a></li>
+          <li><a href="quicktest.html">QUICK TEST</a></li>
+          <li><a href="type.html">TYPE</a></li>
+          <li><a href="travelmap.html">TRAVEL MAP</a></li>
+        </ul>
+      </nav>
+    </header>
 
-<header>
-  <nav class="global-nav">
-    <ul>
-      <li><a href="index.html">MAIN</a></li>
-      <li><a href="introduce.html">INTRODUCE</a></li>
-      <li><a href="quicktest.html">QUICK TEST</a></li>
-      <li><a href="type.html">TYPE</a></li>
-      <li><a href="travelmap.html">TRAVEL MAP</a></li>
-    </ul>
-  </nav>
-</header>
+    <main class="mbti-page">
+      <h1>INTJ 추천 여행지</h1>
 
-<main class="mbti-page">
+      <p>
+        서울특별시, 대전광역시, 부산광역시, 경기도 지역이 준비되어 있습니다.<br />
+        지도에서 해당 지역을 클릭해 보세요.
+      </p>
 
-  <h1>INTJ 추천 여행지</h1>
+      <div class="map-container">
+        <img src="map.png" usemap="#intjmap" alt="대한민국 지도" />
 
-  <p>
-    서울특별시, 대전광역시, 부산광역시, 경기도 지역이 준비되어 있습니다.<br>
-    지도에서 해당 지역을 클릭해 보세요.
-  </p>
+        <map name="intjmap">
+          <!-- 서울 -->
+          <area shape="rect" coords="734,266,793,307" href="intj/intj_seoul.html" />
 
-  <div class="map-container">
+          <!-- 대전 -->
+          <area shape="rect" coords="719,409,781,470" href="intj/intj_daejeon.html" />
 
-    <img src="map.png" usemap="#intjmap" alt="대한민국 지도">
+          <!-- 부산 -->
+          <area shape="rect" coords="960,622,1018,669" href="intj/intj_busan.html" />
 
-    <map name="intjmap">
-
-      <!-- 서울 -->
-      <area shape="rect"
-      coords="734,266,793,307"
-      href="intj_seoul.html">
-
-      <!-- 대전 -->
-      <area shape="rect"
-      coords="719,409,781,470"
-      href="intj_daejeon.html">
-
-      <!-- 부산 -->
-      <area shape="rect"
-      coords="960,622,1018,669"
-      href="intj_busan.html">
-
-      <!-- 경기 -->
-      <area shape="rect"
-      coords="662,167,737,205"
-      href="intj_gyeonggi.html">
-
-    </map>
-
-  </div>
-
-</main>
-
-</body>
+          <!-- 경기 -->
+          <area shape="rect" coords="662,167,737,205" href="intj/intj_gyeonggi.html" />
+        </map>
+      </div>
+    </main>
+  </body>
 </html>
