@@ -222,7 +222,7 @@ legend {
 }
 
 .next-btn,
-.result-trigger {
+.result-btn {
   display: none;
   width: fit-content;
   margin: 30px auto 0;
@@ -242,7 +242,7 @@ legend {
   font-size: 1rem;
 }
 
-.result-trigger {
+.result-btn {
   padding: 22px 80px;
   background-color: #5c3d2e;
   color: white;
@@ -254,12 +254,12 @@ legend {
 .sn-test:valid .next-btn,
 .tf-test:valid .next-btn,
 .jp-test:valid .next-btn,
-.jp-test:valid .result-trigger {
+.jp-test:valid .result-btn {
   display: block;
 }
 
 .next-btn:hover,
-.result-trigger:hover {
+.result-btn:hover {
   transform: translateY(-3px);
   filter: brightness(1.1);
 }
