@@ -4,12 +4,8 @@
     <meta charset="UTF-8" />
     <title>MapBTravelI - Quick Test</title>
     <link rel="stylesheet" href="style.css" />
-    <!-- 공통 CSS 파일 공유 -->
-    <script defer src="test-logic.js"></script>
-    <!-- 결과 산출 로직 -->
   </head>
   <body>
-    <!-- [공통 메뉴바] 모든 페이지 연결 및 가운데 정렬 가이드 준수 -->
     <header>
       <nav class="global-nav">
         <ul>
@@ -31,7 +27,6 @@
       <input type="radio" name="test-tab" id="tab-jp" />
       <input type="radio" name="test-tab" id="tab-result" />
 
-      <!-- [소메뉴] E/I, S/N, T/F, J/P 섹션 이동 탭 -->
       <div class="test-tabs">
         <label for="tab-ei" class="tab-btn btn-ei">E vs I</label>
         <label for="tab-sn" class="tab-btn btn-sn">S vs N</label>
@@ -40,7 +35,7 @@
       </div>
 
       <section class="test-sections">
-        <!-- E vs I 섹션 -->
+        <!-- E vs I -->
         <fieldset class="ei-test">
           <legend>에너지의 방향 (E vs I)</legend>
           <div class="q-box">
@@ -73,7 +68,7 @@
           </div>
         </fieldset>
 
-        <!-- S vs N 섹션 -->
+        <!-- S vs N -->
         <fieldset class="sn-test">
           <legend>정보 수집 방식 (S vs N)</legend>
           <div class="q-box">
@@ -104,6 +99,7 @@
           <label for="tab-tf" class="next-btn">다음</label>
         </fieldset>
 
+        <!-- T vs F-->
         <fieldset class="tf-test">
           <legend>의사결정 근거 (T vs F)</legend>
           <div class="q-box">
@@ -135,7 +131,7 @@
             <label for="tab-jp" class="next-btn">다음</label>
           </div>
         </fieldset>
-        <!-- [T vs F, J vs P 섹션 동일 구조로 반복] -->
+        <!-- J vs P -->
         <fieldset class="jp-test">
           <legend>생활양식 (J vs P)</legend>
           <div class="q-box">
@@ -175,6 +171,7 @@
           </div>
         </fieldset>
 
+        <!-- 결과 창(Mock-up) -->
         <div class="result-test">
           <h3>테스트 완료!</h3>
           <p>당신의 MBTI 분석이 완료되었습니다.</p>
