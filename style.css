@@ -1,4 +1,4 @@
-/* 전체 페이지 */
+/* 전체 페이지 적용 CSS */
 * {
   margin: 0;
   padding: 0;
@@ -40,7 +40,7 @@ header {
 .global-nav a:hover {
   color: #f5e6da;
 }
-/* index.html */
+/* index.html 적용 CSS*/
 .hero {
   height: 100vh;
   background:
@@ -91,7 +91,7 @@ header {
   border-radius: 15px;
   border-bottom: 5px solid #7a9e7e;
 }
-/* introduce.html */
+/* introduce.html 적용 CSS*/
 .intro-layout {
   display: flex;
   max-width: 1200px;
@@ -141,7 +141,7 @@ header {
   border-left: 8px solid #7a9e7e;
   padding-left: 15px;
 }
-/* quicktest.html */
+/* quicktest.html 적용 CSS*/
 input[type='radio'][name='test-tab'] {
   display: none;
 }
