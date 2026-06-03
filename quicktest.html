@@ -19,8 +19,13 @@
     </header>
 
     <main class="test-container container">
-      <h2 class="section-title">QUICK TEST</h2>
-      <p class="test-desc">간단한 질문과 답변을 통해 나의 여행 성향을 확인해보세요.</p>
+      <section class="test-header">
+        <br />
+        <br />
+        <span class="test-badge">MBTI QUICK TEST</span>
+        <h2 class="section-title">MBTI 검사</h2>
+        <p class="test-desc">간단한 질문과 답변을 통해 나의 여행 성향을 확인해보세요.</p>
+      </section>
       <input type="radio" name="test-tab" id="tab-ei" checked />
       <input type="radio" name="test-tab" id="tab-sn" />
       <input type="radio" name="test-tab" id="tab-tf" />
@@ -40,27 +45,33 @@
           <legend>에너지의 방향 (E vs I)</legend>
           <div class="q-box">
             <p>1. 생일 파티에 초대할 수 있는 친구는?</p>
-            <label><input type="radio" name="ei1" value="A" required /> A: 어느 정도 친한 친구도 초대 가능</label>
+            <br />
+            <label><input type="radio" name="ei1" value="A" required /> A: 어느 정도 친한 친구도 초대 가능</label><br />
             <label><input type="radio" name="ei1" value="B" required /> B: 찐친 몇 명만 초대 가능</label>
           </div>
           <div class="q-box">
             <p>2. 친구가 만나 놀던 중에 친구의 친구가 같이 놀아도 되는지 물어보면?</p>
-            <label><input type="radio" name="ei2" value="A" required /> A: 당연히 가능, 친구의 친구도 친구다</label>
+            <br />
+            <label><input type="radio" name="ei2" value="A" required /> A: 당연히 가능, 친구의 친구도 친구다</label
+            ><br />
             <label><input type="radio" name="ei2" value="B" required /> B: 불가능, 친구의 친구는 불편하다</label>
           </div>
           <div class="q-box">
             <p>3. 평일에 학교나 회사에만 있었으니까 주말엔?</p>
-            <label><input type="radio" name="ei3" value="A" required /> A: 주말에 밖에 놀러 간다. </label>
+            <br />
+            <label><input type="radio" name="ei3" value="A" required /> A: 주말에 밖에 놀러 간다. </label><br />
             <label><input type="radio" name="ei3" value="B" required /> B: 주말에 집에 있어야 한다</label>
           </div>
           <div class="q-box">
             <p>4. 약속이 없는 날 집에서 쉴 때, 친구에게 연락이 오면?</p>
-            <label><input type="radio" name="ei4" value="A" required /> A: 집에 있어도 칼답</label>
+            <br />
+            <label><input type="radio" name="ei4" value="A" required /> A: 집에 있어도 칼답</label><br />
             <label><input type="radio" name="ei4" value="B" required /> B: 찐친 몇 명만 초대 가능</label>
           </div>
           <div class="q-box">
             <p>5. 친구들과 다같이 밥 먹을 때 주로</p>
-            <label><input type="radio" name="ei5" value="A" required /> A: 말을 하면서 먹는다. </label>
+            <br />
+            <label><input type="radio" name="ei5" value="A" required /> A: 말을 하면서 먹는다. </label><br />
             <label><input type="radio" name="ei5" value="B" required /> B: 얘기를 들으며 먹는다</label>
           </div>
           <div class="btn-area">
@@ -73,27 +84,32 @@
           <legend>정보 수집 방식 (S vs N)</legend>
           <div class="q-box">
             <p>1. 아무 생각을 하라고 하면?</p>
-            <label><input type="radio" name="sn1" value="A" required /> A: 정말 아무 생각을 안 한다.</label>
+            <br />
+            <label><input type="radio" name="sn1" value="A" required /> A: 정말 아무 생각을 안 한다.</label><br />
             <label><input type="radio" name="sn1" value="B" required /> B: 아무 생각을 안 하는 것을 생각한다.</label>
           </div>
           <div class="q-box">
             <p>2. 시나 소설을 잘 쓸 수 있는가?</p>
-            <label><input type="radio" name="sn2" value="A" required /> A: 자신 없음</label>
+            <br />
+            <label><input type="radio" name="sn2" value="A" required /> A: 자신 없음</label><br />
             <label><input type="radio" name="sn2" value="B" required /> B: 너무 가능, 자신있음</label>
           </div>
           <div class="q-box">
             <p>3. 요리할 때</p>
-            <label><input type="radio" name="sn3" value="A" required /> A: 레시피 정량대로</label>
+            <br />
+            <label><input type="radio" name="sn3" value="A" required /> A: 레시피 정량대로</label><br />
             <label><input type="radio" name="sn3" value="B" required /> B: 손대중으로</label>
           </div>
           <div class="q-box">
             <p>4. 음악을 들을 때 더 좋아하는 것은</p>
-            <label><input type="radio" name="sn4" value="A" required /> A: 멜로디</label>
+            <br />
+            <label><input type="radio" name="sn4" value="A" required /> A: 멜로디</label><br />
             <label><input type="radio" name="sn4" value="B" required /> B: 가사</label>
           </div>
           <div class="q-box">
             <p>5. 멍 때릴 때 무얼 하는가?</p>
-            <label><input type="radio" name="sn5" value="A" required /> A: 아무 생각도 안 함, 가만히 있음</label>
+            <br />
+            <label><input type="radio" name="sn5" value="A" required /> A: 아무 생각도 안 함, 가만히 있음</label><br />
             <label><input type="radio" name="sn5" value="B" required /> B: 잡생각, 상상하기</label>
           </div>
           <label for="tab-tf" class="next-btn">다음</label>
@@ -104,27 +120,34 @@
           <legend>의사결정 근거 (T vs F)</legend>
           <div class="q-box">
             <p>1. 싸가지는 없는데 일 잘 해</p>
-            <label><input type="radio" name="tf1" value="A" required /> A: 일 잘 한다는 건 칭찬</label>
+            <br />
+            <label><input type="radio" name="tf1" value="A" required /> A: 일 잘 한다는 건 칭찬</label><br />
             <label><input type="radio" name="tf1" value="B" required /> B: 싸가지가 없다는 말이 기분 나쁨</label>
           </div>
           <div class="q-box">
             <p>2. 나 아파</p>
-            <label><input type="radio" name="tf2" value="A" required /> A: 어디 아파? 병원 갔어?</label>
+            <br />
+            <label><input type="radio" name="tf2" value="A" required /> A: 어디 아파? 병원 갔어?</label><br />
             <label><input type="radio" name="tf2" value="B" required /> B: 많이 아파? 괜찮아?</label>
           </div>
           <div class="q-box">
             <p>3. 친구가 고민 얘기를 한다.</p>
-            <label><input type="radio" name="tf3" value="A" required /> A: 이렇게 저렇게 해보자. 해결방법을 제시</label>
+            <br />
+            <label><input type="radio" name="tf3" value="A" required /> A: 이렇게 저렇게 해보자. 해결방법을 제시</label
+            ><br />
             <label><input type="radio" name="tf3" value="B" required /> B: 아 그랬구나. 공감</label>
           </div>
           <div class="q-box">
             <p>4. 오늘 하루 일기를 쓴다면?</p>
-            <label><input type="radio" name="tf4" value="A" required /> A: 오늘 있었던 사실, 일들을 적는다.</label>
+            <br />
+            <label><input type="radio" name="tf4" value="A" required /> A: 오늘 있었던 사실, 일들을 적는다.</label
+            ><br />
             <label><input type="radio" name="tf4" value="B" required /> B: 오늘 감성, 생각을 적는다</label>
           </div>
           <div class="q-box">
             <p>5. 약속시간에 늦었을 때 사과하는 법</p>
-            <label><input type="radio" name="tf5" value="A" required /> A: 늦은 이유 설명</label>
+            <br />
+            <label><input type="radio" name="tf5" value="A" required /> A: 늦은 이유 설명</label><br />
             <label><input type="radio" name="tf5" value="B" required /> B: 진심을 담아 사과 표현</label>
           </div>
           <div class="btn-area">
@@ -136,34 +159,39 @@
           <legend>생활양식 (J vs P)</legend>
           <div class="q-box">
             <p>1. 약속을 앞두고</p>
-            <label><input type="radio" name="jp1" value="A" required /> A: 2~3시간 전부터 준비</label>
+            <br />
+            <label><input type="radio" name="jp1" value="A" required /> A: 2~3시간 전부터 준비</label><br />
             <label
               ><input type="radio" name="jp1" value="B" required /> B: 시간 다 돼서 준비, 가끔 약속이 바뀌기도 함</label
             >
           </div>
           <div class="q-box">
             <p>2. 여행갈 때</p>
-            <label><input type="radio" name="jp2" value="A" required /> A: 시간단위로 계획 짬, 예약해둠</label>
+            <br />
+            <label><input type="radio" name="jp2" value="A" required /> A: 시간단위로 계획 짬, 예약해둠</label><br />
             <label><input type="radio" name="jp2" value="B" required /> B: 대략적인 코스, 즉흥적</label>
           </div>
           <div class="q-box">
             <p>3. 정리정돈</p>
+            <br />
             <label
               ><input type="radio" name="jp3" value="A" required /> A: 정리정돈이 잘 되어 있음, 컴퓨터 폴더도
               깔끔</label
-            >
+            ><br />
             <label><input type="radio" name="jp3" value="B" required /> B: 한번에 몰아서 치움</label>
           </div>
           <div class="q-box">
             <p>4. 과제</p>
+            <br />
             <label
               ><input type="radio" name="jp4" value="A" required /> A: 미리미리 계획 세워서 함, 미리 안 하면 불안</label
-            >
+            ><br />
             <label><input type="radio" name="jp4" value="B" required /> B: 데드라인에 닥쳐서 함</label>
           </div>
           <div class="q-box">
             <p>5. 루틴</p>
-            <label><input type="radio" name="jp5" value="A" required /> A: 반복되는 일상 선호</label>
+            <br />
+            <label><input type="radio" name="jp5" value="A" required /> A: 반복되는 일상 선호</label><br />
             <label><input type="radio" name="jp5" value="B" required /> B: 매일매일 변화가 있어야 함</label>
           </div>
           <div class="btn-area">
