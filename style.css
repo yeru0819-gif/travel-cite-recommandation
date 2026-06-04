@@ -350,6 +350,139 @@ legend {
   color: #7a9e7e;
 }
 
+/* type.html 적용 css */
+.type-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.type-header h2 {
+  font-size: 2.5rem;
+  color: #5c3d2e;
+  margin-bottom: 10px;
+}
+
+input[name='mbti-tab'] {
+  display: none;
+}
+
+.mbti-selection-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  margin: 40px 0;
+}
+
+.mbti-selection-grid label {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  color: #5c3d2e;
+  border-bottom: 4px solid #f5e6da;
+  transition: 0.3s;
+}
+
+.mbti-selection-grid label:hover {
+  background-color: #f5e6da;
+}
+
+#istj:checked ~ .mbti-selection-grid label[for='istj'],
+#isfj:checked ~ .mbti-selection-grid label[for='isfj'],
+#infj:checked ~ .mbti-selection-grid label[for='infj'],
+#intj:checked ~ .mbti-selection-grid label[for='intj'],
+#istp:checked ~ .mbti-selection-grid label[for='istp'],
+#isfp:checked ~ .mbti-selection-grid label[for='isfp'],
+#infp:checked ~ .mbti-selection-grid label[for='infp'],
+#intp:checked ~ .mbti-selection-grid label[for='intp'],
+#estp:checked ~ .mbti-selection-grid label[for='estp'],
+#esfp:checked ~ .mbti-selection-grid label[for='esfp'],
+#enfp:checked ~ .mbti-selection-grid label[for='enfp'],
+#entp:checked ~ .mbti-selection-grid label[for='entp'],
+#estj:checked ~ .mbti-selection-grid label[for='estj'],
+#esfj:checked ~ .mbti-selection-grid label[for='esfj'],
+#enfj:checked ~ .mbti-selection-grid label[for='enfj'],
+#entj:checked ~ .mbti-selection-grid label[for='entj'] {
+  background-color: #7a9e7e;
+  color: #ffffff;
+  border-bottom-color: #5c3d2e;
+  transform: translateY(-5px);
+}
+
+.type-detail {
+  display: none;
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 20px;
+  text-align: left;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  animation: fadeIn 0.5s ease;
+}
+
+#istj:checked ~ .type-content-wrapper .istj,
+#isfj:checked ~ .type-content-wrapper .isfj,
+#infj:checked ~ .type-content-wrapper .infj,
+#intj:checked ~ .type-content-wrapper .intj,
+#istp:checked ~ .type-content-wrapper .istp,
+#isfp:checked ~ .type-content-wrapper .isfp,
+#infp:checked ~ .type-content-wrapper .infp,
+#intp:checked ~ .type-content-wrapper .intp,
+#estp:checked ~ .type-content-wrapper .estp,
+#esfp:checked ~ .type-content-wrapper .esfp,
+#enfp:checked ~ .type-content-wrapper .enfp,
+#entp:checked ~ .type-content-wrapper .entp,
+#estj:checked ~ .type-content-wrapper .estj,
+#esfj:checked ~ .type-content-wrapper .esfj,
+#enfj:checked ~ .type-content-wrapper .enfj,
+#entj:checked ~ .type-content-wrapper .entj {
+  display: block;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.type-detail h3 {
+  font-size: 2rem;
+  color: #7a9e7e;
+  margin-bottom: 25px;
+  border-bottom: 2px solid #f5e6da;
+  padding-bottom: 10px;
+}
+
+.type-detail h3 small {
+  font-size: 1.1rem;
+  color: #5c3d2e;
+  margin-left: 10px;
+}
+
+.box {
+  margin-bottom: 30px;
+}
+
+.box h4 {
+  color: #5c3d2e;
+  margin-bottom: 10px;
+}
+
+.box p {
+  background-color: #f5e6da;
+  padding: 20px;
+  border-radius: 10px;
+  border-left: 5px solid #7a9e7e;
+  color: #5c3d2e;
+}
+
 /*TRAVEL MAP PAGE*/
 
 .travelmap-layout {
