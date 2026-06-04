@@ -14,168 +14,360 @@
           <li><a href="introduce.html">INTRODUCE</a></li>
           <li><a href="quicktest.html">QUICK TEST</a></li>
           <li><a href="type.html">TYPE</a></li>
-          <li><a href="travelmap.html">TRAVLE MAP</a></li>
+          <li><a href="travelmap.html">TRAVEL MAP</a></li>
         </ul>
       </nav>
     </header>
     <main class="type-container">
-        <section class="type-header">
-            <h2>MBTI 여행 성향 리포트</h2>
-            <p>각 MBTI 유형별 여행 스타일과 찰떡궁합 동반자를 확인해보세요.</p>
-        </section>
+      <section class="type-header">
+        <h2>MBTI 여행 성향 리포트</h2>
+        <p>각 MBTI 유형별 여행 스타일과 찰떡궁합 동반자를 확인해보세요.</p>
+      </section>
 
-        <input type="radio" name="mbti-tab" id="istj" checked>
-        <input type="radio" name="mbti-tab" id="istp">
-        <input type="radio" name="mbti-tab" id="isfj">
-        <input type="radio" name="mbti-tab" id="isfp">
-        <input type="radio" name="mbti-tab" id="intj">
-        <input type="radio" name="mbti-tab" id="intp">
-        <input type="radio" name="mbti-tab" id="infj">
-        <input type="radio" name="mbti-tab" id="infp">
-        <input type="radio" name="mbti-tab" id="estj">
-        <input type="radio" name="mbti-tab" id="estp">
-        <input type="radio" name="mbti-tab" id="esfj">
-        <input type="radio" name="mbti-tab" id="esfp">
-        <input type="radio" name="mbti-tab" id="entj">
-        <input type="radio" name="mbti-tab" id="entp">
-        <input type="radio" name="mbti-tab" id="enfj">
-        <input type="radio" name="mbti-tab" id="enfp">
+      <!-- [핵심] 유형 선택을 위한 숨겨진 라디오 버튼 (16개) -->
+      <input type="radio" name="mbti-tab" id="istj" checked />
+      <input type="radio" name="mbti-tab" id="istp" />
+      <input type="radio" name="mbti-tab" id="isfj" />
+      <input type="radio" name="mbti-tab" id="isfp" />
+      <input type="radio" name="mbti-tab" id="intj" />
+      <input type="radio" name="mbti-tab" id="intp" />
+      <input type="radio" name="mbti-tab" id="infj" />
+      <input type="radio" name="mbti-tab" id="infp" />
+      <input type="radio" name="mbti-tab" id="estj" />
+      <input type="radio" name="mbti-tab" id="estp" />
+      <input type="radio" name="mbti-tab" id="esfj" />
+      <input type="radio" name="mbti-tab" id="esfp" />
+      <input type="radio" name="mbti-tab" id="entj" />
+      <input type="radio" name="mbti-tab" id="entp" />
+      <input type="radio" name="mbti-tab" id="enfj" />
+      <input type="radio" name="mbti-tab" id="enfp" />
 
-        <div class="mbti-selection-grid">
-            <label for="istj" class="mbti-label">ISTJ</label>
-            <label for="istp" class="mbti-label">ISTP</label>
-            <label for="isfj" class="mbti-label">ISFJ</label>
-            <label for="isfp" class="mbti-label">ISFP</label>
-            <label for="intj" class="mbti-label">INTJ</label>
-            <label for="intp" class="mbti-label">INTP</label>
-            <label for="infj" class="mbti-label">INFJ</label>
-            <label for="infp" class="mbti-label">INFP</label>
+      <div class="mbti-selection-grid">
+        <label for="istj" class="mbti-label">ISTJ</label>
+        <label for="istp" class="mbti-label">ISTP</label>
+        <label for="isfj" class="mbti-label">ISFJ</label>
+        <label for="isfp" class="mbti-label">ISFP</label>
+        <label for="intj" class="mbti-label">INTJ</label>
+        <label for="intp" class="mbti-label">INTP</label>
+        <label for="infj" class="mbti-label">INFJ</label>
+        <label for="infp" class="mbti-label">INFP</label>
 
-            <label for="estj" class="mbti-label">ESTJ</label>
-            <label for="estp" class="mbti-label">ESTP</label>
-            <label for="esfj" class="mbti-label">ESFJ</label>
-            <label for="esfp" class="mbti-label">ESFP</label>
-            <label for="entj" class="mbti-label">ENTJ</label>
-            <label for="entp" class="mbti-label">ENTP</label>
-            <label for="enfj" class="mbti-label">ENFJ</label>
-            <label for="enfp" class="mbti-label">ENFP</label>
-        </div>
-         <div class="type-content-wrapper">
+        <label for="estj" class="mbti-label">ESTJ</label>
+        <label for="estp" class="mbti-label">ESTP</label>
+        <label for="esfj" class="mbti-label">ESFJ</label>
+        <label for="esfp" class="mbti-label">ESFP</label>
+        <label for="entj" class="mbti-label">ENTJ</label>
+        <label for="entp" class="mbti-label">ENTP</label>
+        <label for="enfj" class="mbti-label">ENFJ</label>
+        <label for="enfp" class="mbti-label">ENFP</label>
+      </div>
+
+      <div class="type-content-wrapper">
         <!-- ISTJ -->
         <article class="type-detail istj">
-            <h3>ISTJ <small>현실적인 계획형</small></h3>
-            <div class="box"><h4>여행 성향</h4><p>체계적이고 책임감이 강하며 사전 계획이 철저합니다. 안정적인 지적 여행을 선호하며 시간 엄수를 매우 중요하게 생각합니다[1].</p></div>
-            <div class="box"><h4>추천 동반자</h4><p><strong>ESTP:</strong> 계획과 재미가 공존하는 여행 가능. <strong>INTJ, INTP:</strong> 함께 지식을 쌓는 여행에 적합[1].</p></div>
+          <h3>ISTJ <small>현실적인 계획형</small></h3>
+          <div class="box">
+            <h4>여행 성향</h4>
+            <p>
+              체계적이고 책임감이 강하며 사전 계획이 철저합니다. 안정적인 지적 여행을 선호하며 시간 엄수를 매우 중요하게
+              생각합니다[1].
+            </p>
+          </div>
+          <div class="box">
+            <h4>추천 동반자</h4>
+            <p>
+              <strong>ESTP:</strong> 계획과 재미가 공존하는 여행 가능. <strong>INTJ, INTP:</strong> 함께 지식을 쌓는
+              여행에 적합[1].
+            </p>
+          </div>
         </article>
 
         <!-- ISFJ -->
         <article class="type-detail isfj">
-            <h3>ISFJ <small>배려하는 힐링형</small></h3>
-            <div class="box"><h4>여행 성향</h4><p>안정적이고 편안한 환경을 선호하는 감성적인 여행자입니다. 잔잔한 힐링을 좋아하며 동행인의 만족도를 중요시합니다[1].</p></div>
-            <div class="box"><h4>추천 동반자</h4><p><strong>ISTP, INFJ:</strong> 힐링과 새로운 경험이 조화로운 여행. <strong>INFP:</strong> 느긋하게 쉬는 여행[1].</p></div>
+          <h3>ISFJ <small>배려하는 힐링형</small></h3>
+          <div class="box">
+            <h4>여행 성향</h4>
+            <p>
+              안정적이고 편안한 환경을 선호하는 감성적인 여행자입니다. 잔잔한 힐링을 좋아하며 동행인의 만족도를
+              중요시합니다[1].
+            </p>
+          </div>
+          <div class="box">
+            <h4>추천 동반자</h4>
+            <p>
+              <strong>ISTP, INFJ:</strong> 힐링과 새로운 경험이 조화로운 여행. <strong>INFP:</strong> 느긋하게 쉬는
+              여행[1].
+            </p>
+          </div>
         </article>
 
         <!-- INFJ -->
         <article class="type-detail infj">
-            <h3>INFJ <small>배려하는 사색형</small></h3>
-            <div class="box"><h4>여행 성향</h4><p>사고적이고 유의미한 경험을 중시합니다. 조용하고 철학적인 분위기에서 감정적 울림과 생각하는 시간을 즐깁니다[1].</p></div>
-            <div class="box"><h4>추천 동반자</h4><p><strong>ENFP:</strong> 깊은 대화가 가능한 여행. <strong>INFP:</strong> 감성을 공유하며 따로 또 같이 이동하는 여행[1].</p></div>
+          <h3>INFJ <small>배려하는 사색형</small></h3>
+          <div class="box">
+            <h4>여행 성향</h4>
+            <p>
+              사고적이고 유의미한 경험을 중시합니다. 조용하고 철학적인 분위기에서 감정적 울림과 생각하는 시간을
+              즐깁니다[1].
+            </p>
+          </div>
+          <div class="box">
+            <h4>추천 동반자</h4>
+            <p>
+              <strong>ENFP:</strong> 깊은 대화가 가능한 여행. <strong>INFP:</strong> 감성을 공유하며 따로 또 같이
+              이동하는 여행[1].
+            </p>
+          </div>
         </article>
 
         <!-- INTJ -->
         <article class="type-detail intj">
-            <h3>INTJ <small>전략적인 탐험형</small></h3>
-            <div class="box"><h4>여행 성향</h4><p>효율적이고 분석적인 태도로 목표 중심의 여행을 합니다. 단순 관광보다 깊이 있는 지적 경험을 훨씬 중요하게 여깁니다[1].</p></div>
-            <div class="box"><h4>추천 동반자</h4><p><strong>INFJ:</strong> 조용한 대화와 탐색을 즐기는 갈등 없는 여행. <strong>ENTP:</strong> 효율을 극대화하는 탐험 여행[1].</p></div>
+          <h3>INTJ <small>전략적인 탐험형</small></h3>
+          <div class="box">
+            <h4>여행 성향</h4>
+            <p>
+              효율적이고 분석적인 태도로 목표 중심의 여행을 합니다. 단순 관광보다 깊이 있는 지적 경험을 훨씬 중요하게
+              여깁니다[1].
+            </p>
+          </div>
+          <div class="box">
+            <h4>추천 동반자</h4>
+            <p>
+              <strong>INFJ:</strong> 조용한 대화와 탐색을 즐기는 갈등 없는 여행. <strong>ENTP:</strong> 효율을
+              극대화하는 탐험 여행[1].
+            </p>
+          </div>
         </article>
 
         <!-- ISTP -->
         <article class="type-detail istp">
-            <h3>ISTP <small>감각적인 탐험형</small></h3>
-            <div class="box"><h4>여행 성향</h4><p>격렬한 액티비티와 차분한 혼자만의 시간이 모두 필요한 여행자입니다. 직접 몸으로 느끼는 체험 유무가 매우 중요합니다[1].</p></div>
-            <div class="box"><h4>추천 동반자</h4><p><strong>ESTP:</strong> 즉흥적이고 활동적인 텐션이 잘 맞는 여행. <strong>INFJ:</strong> 활동과 휴식의 균형을 잘 맞춰주는 동반자[1].</p></div>
+          <h3>ISTP <small>감각적인 탐험형</small></h3>
+          <div class="box">
+            <h4>여행 성향</h4>
+            <p>
+              격렬한 액티비티와 차분한 혼자만의 시간이 모두 필요한 여행자입니다. 직접 몸으로 느끼는 체험 유무가 매우
+              중요합니다[1].
+            </p>
+          </div>
+          <div class="box">
+            <h4>추천 동반자</h4>
+            <p>
+              <strong>ESTP:</strong> 즉흥적이고 활동적인 텐션이 잘 맞는 여행. <strong>INFJ:</strong> 활동과 휴식의
+              균형을 잘 맞춰주는 동반자[1].
+            </p>
+          </div>
         </article>
 
         <!-- ISFP -->
         <article class="type-detail isfp">
-            <h3>ISFP <small>감각적인 배려형</small></h3>
-            <div class="box"><h4>여행 성향</h4><p>예술적이고 다정다감한 성향으로, 예술적 체험을 할 수 있는 여행을 선호합니다. 여행 중 갈등을 피하고 수용적인 태도를 보입니다[1].</p></div>
-            <div class="box"><h4>추천 동반자</h4><p><strong>ESFP:</strong> 계획 없이 떠나도 웃음이 끊이지 않는 여행. <strong>ISFJ:</strong> 세심하게 기본 틀을 챙겨주는 평온한 여행[1].</p></div>
+          <h3>ISFP <small>감각적인 배려형</small></h3>
+          <div class="box">
+            <h4>여행 성향</h4>
+            <p>
+              예술적이고 다정다감한 성향으로, 예술적 체험을 할 수 있는 여행을 선호합니다. 여행 중 갈등을 피하고 수용적인
+              태도를 보입니다[1].
+            </p>
+          </div>
+          <div class="box">
+            <h4>추천 동반자</h4>
+            <p>
+              <strong>ESFP:</strong> 계획 없이 떠나도 웃음이 끊이지 않는 여행. <strong>ISFJ:</strong> 세심하게 기본 틀을
+              챙겨주는 평온한 여행[1].
+            </p>
+          </div>
         </article>
 
         <!-- INFP -->
         <article class="type-detail infp">
-            <h3>INFP <small>감성적인 탐험형</small></h3>
-            <div class="box"><h4>여행 성향</h4><p>예술적이고 이상주의적인 성향입니다. 예술을 통해 따뜻한 감정을 느끼길 원하며 본인이 꿈꾸는 이상적인 여행에서 멀어지지 않는 것이 중요합니다[1].</p></div>
-            <div class="box"><h4>추천 동반자</h4><p><strong>ENFP:</strong> 엉뚱한 상상도 추억으로 공유하는 여행. <strong>INFJ:</strong> 말하지 않아도 쉴 타이밍을 아는 사색 여행[1].</p></div>
+          <h3>INFP <small>감성적인 탐험형</small></h3>
+          <div class="box">
+            <h4>여행 성향</h4>
+            <p>
+              예술적이고 이상주의적인 성향입니다. 예술을 통해 따뜻한 감정을 느끼길 원하며 본인이 꿈꾸는 이상적인
+              여행에서 멀어지지 않는 것이 중요합니다[1].
+            </p>
+          </div>
+          <div class="box">
+            <h4>추천 동반자</h4>
+            <p>
+              <strong>ENFP:</strong> 엉뚱한 상상도 추억으로 공유하는 여행. <strong>INFJ:</strong> 말하지 않아도 쉴
+              타이밍을 아는 사색 여행[1].
+            </p>
+          </div>
         </article>
 
         <!-- INTP -->
         <article class="type-detail intp">
-            <h3>INTP <small>분석적인 사고형</small></h3>
-            <div class="box"><h4>여행 성향</h4><p>비평적이고 이론적인 성향으로 지적인 대화를 논할 수 있는 여행을 선호합니다. 효율성과 깊이 있는 대화/체험이 핵심입니다[1].</p></div>
-            <div class="box"><h4>추천 동반자</h4><p><strong>INTJ:</strong> 시끄러운 곳을 피하는 분석적인 여행. <strong>INFJ:</strong> 건조한 여행에 감성을 더해주는 동반자[1].</p></div>
+          <h3>INTP <small>분석적인 사고형</small></h3>
+          <div class="box">
+            <h4>여행 성향</h4>
+            <p>
+              비평적이고 이론적인 성향으로 지적인 대화를 논할 수 있는 여행을 선호합니다. 효율성과 깊이 있는 대화/체험이
+              핵심입니다[1].
+            </p>
+          </div>
+          <div class="box">
+            <h4>추천 동반자</h4>
+            <p>
+              <strong>INTJ:</strong> 시끄러운 곳을 피하는 분석적인 여행. <strong>INFJ:</strong> 건조한 여행에 감성을
+              더해주는 동반자[1].
+            </p>
+          </div>
         </article>
 
         <!-- ESTP -->
         <article class="type-detail estp">
-            <h3>ESTP <small>활동적인 탐험형</small></h3>
-            <div class="box"><h4>여행 성향</h4><p>현실적이고 자극적인 경험을 즐깁니다. 지루한 것을 못 참으며 이론보다 직접 몸으로 부딪히는 스릴 있는 여행을 선호합니다[1].</p></div>
-            <div class="box"><h4>추천 동반자</h4><p><strong>ISTP, ESFP:</strong> 핫플레이스와 액티비티를 쉬지 않고 즐기는 여행. <strong>ISTJ:</strong> 예산과 숙소를 관리해주는 체계적 파트너[1].</p></div>
+          <h3>ESTP <small>활동적인 탐험형</small></h3>
+          <div class="box">
+            <h4>여행 성향</h4>
+            <p>
+              현실적이고 자극적인 경험을 즐깁니다. 지루한 것을 못 참으며 이론보다 직접 몸으로 부딪히는 스릴 있는 여행을
+              선호합니다[1].
+            </p>
+          </div>
+          <div class="box">
+            <h4>추천 동반자</h4>
+            <p>
+              <strong>ISTP, ESFP:</strong> 핫플레이스와 액티비티를 쉬지 않고 즐기는 여행. <strong>ISTJ:</strong> 예산과
+              숙소를 관리해주는 체계적 파트너[1].
+            </p>
+          </div>
         </article>
 
         <!-- ESFP -->
         <article class="type-detail esfp">
-            <h3>ESFP <small>활동적인 사교형</small></h3>
-            <div class="box"><h4>여행 성향</h4><p>사교적이고 낙천적입니다. 유행에 매우 민감하며 '지금 이 순간'의 즐거움과 SNS 핫플레이스 방문을 중요하게 생각합니다[1].</p></div>
-            <div class="box"><h4>추천 동반자</h4><p><strong>ISFP:</strong> 리드에 잘 반응하며 조화롭게 즐기는 여행. <strong>ESTP:</strong> 여행 전체를 하나의 거대한 파티처럼 즐기는 조합[1].</p></div>
+          <h3>ESFP <small>활동적인 사교형</small></h3>
+          <div class="box">
+            <h4>여행 성향</h4>
+            <p>
+              사교적이고 낙천적입니다. 유행에 매우 민감하며 '지금 이 순간'의 즐거움과 SNS 핫플레이스 방문을 중요하게
+              생각합니다[1].
+            </p>
+          </div>
+          <div class="box">
+            <h4>추천 동반자</h4>
+            <p>
+              <strong>ISFP:</strong> 리드에 잘 반응하며 조화롭게 즐기는 여행. <strong>ESTP:</strong> 여행 전체를 하나의
+              거대한 파티처럼 즐기는 조합[1].
+            </p>
+          </div>
         </article>
 
         <!-- ENFP -->
         <article class="type-detail enfp">
-            <h3>ENFP <small>감성적인 즉흥형</small></h3>
-            <div class="box"><h4>여행 성향</h4><p>일상과 반대되는 이색적인 경험과 타인과의 교감을 갈망합니다. 정해진 계획보다는 생동감 넘치는 즉흥 여행을 선호합니다[1].</p></div>
-            <div class="box"><h4>추천 동반자</h4><p><strong>INFJ:</strong> 큰 틀을 잡아주며 깊은 대화가 가능한 여행. <strong>INTJ:</strong> 부족한 효율성을 채워주는 상호보완적 관계[1].</p></div>
+          <h3>ENFP <small>감성적인 즉흥형</small></h3>
+          <div class="box">
+            <h4>여행 성향</h4>
+            <p>
+              일상과 반대되는 이색적인 경험과 타인과의 교감을 갈망합니다. 정해진 계획보다는 생동감 넘치는 즉흥 여행을
+              선호합니다[1].
+            </p>
+          </div>
+          <div class="box">
+            <h4>추천 동반자</h4>
+            <p>
+              <strong>INFJ:</strong> 큰 틀을 잡아주며 깊은 대화가 가능한 여행. <strong>INTJ:</strong> 부족한 효율성을
+              채워주는 상호보완적 관계[1].
+            </p>
+          </div>
         </article>
 
         <!-- ENTP -->
         <article class="type-detail entp">
-            <h3>ENTP <small>능동적인 탐험형</small></h3>
-            <div class="box"><h4>여행 성향</h4><p>새로운 아이디어와 도전을 즐기며 계획보다 상황에 맞추는 능동적인 여행자입니다. 남들이 안 가는 새로운 길을 개척하는 것을 좋아합니다[1].</p></div>
-            <div class="box"><h4>추천 동반자</h4><p><strong>INTJ:</strong> 아이디어를 실질적인 루트로 만들어주는 효율적 여행. <strong>INTP:</strong> 역사와 원리에 대해 토론하는 지적 여행[1].</p></div>
+          <h3>ENTP <small>능동적인 탐험형</small></h3>
+          <div class="box">
+            <h4>여행 성향</h4>
+            <p>
+              새로운 아이디어와 도전을 즐기며 계획보다 상황에 맞추는 능동적인 여행자입니다. 남들이 안 가는 새로운 길을
+              개척하는 것을 좋아합니다[1].
+            </p>
+          </div>
+          <div class="box">
+            <h4>추천 동반자</h4>
+            <p>
+              <strong>INTJ:</strong> 아이디어를 실질적인 루트로 만들어주는 효율적 여행. <strong>INTP:</strong> 역사와
+              원리에 대해 토론하는 지적 여행[1].
+            </p>
+          </div>
         </article>
 
         <!-- ESTJ -->
         <article class="type-detail estj">
-            <h3>ESTJ <small>체계적인 현실형</small></h3>
-            <div class="box"><h4>여행 성향</h4><p>실질적이고 계획적입니다. 일관성 있고 실용적인 동선을 선호하며, 정해진 규칙과 전통을 따르는 안정적인 여행을 추구합니다[1].</p></div>
-            <div class="box"><h4>추천 동반자</h4><p><strong>ISTJ:</strong> 예산과 시간 엄수를 철저히 지키는 깔끔한 여행. <strong>ISFJ:</strong> 추진력 있는 리더를 세심하게 보좌하는 파트너[1].</p></div>
+          <h3>ESTJ <small>체계적인 현실형</small></h3>
+          <div class="box">
+            <h4>여행 성향</h4>
+            <p>
+              실질적이고 계획적입니다. 일관성 있고 실용적인 동선을 선호하며, 정해진 규칙과 전통을 따르는 안정적인 여행을
+              추구합니다[1].
+            </p>
+          </div>
+          <div class="box">
+            <h4>추천 동반자</h4>
+            <p>
+              <strong>ISTJ:</strong> 예산과 시간 엄수를 철저히 지키는 깔끔한 여행. <strong>ISFJ:</strong> 추진력 있는
+              리더를 세심하게 보좌하는 파트너[1].
+            </p>
+          </div>
         </article>
 
         <!-- ESFJ -->
         <article class="type-detail esfj">
-            <h3>ESFJ <small>사교적인 배려형</small></h3>
-            <div class="box"><h4>여행 성향</h4><p>협조적이고 타인의 기분에 민감합니다. 모두가 웃을 수 있는 다정다감한 분위기를 중시하며 사람 사이의 조화를 최우선으로 합니다[1].</p></div>
-            <div class="box"><h4>추천 동반자</h4><p><strong>ISFP:</strong> 갈등 없이 서로를 배려하는 평화로운 여행. <strong>ISTJ:</strong> 꼼꼼한 체크와 활기찬 리드가 만난 계획적 여행[1].</p></div>
+          <h3>ESFJ <small>사교적인 배려형</small></h3>
+          <div class="box">
+            <h4>여행 성향</h4>
+            <p>
+              협조적이고 타인의 기분에 민감합니다. 모두가 웃을 수 있는 다정다감한 분위기를 중시하며 사람 사이의 조화를
+              최우선으로 합니다[1].
+            </p>
+          </div>
+          <div class="box">
+            <h4>추천 동반자</h4>
+            <p>
+              <strong>ISFP:</strong> 갈등 없이 서로를 배려하는 평화로운 여행. <strong>ISTJ:</strong> 꼼꼼한 체크와
+              활기찬 리드가 만난 계획적 여행[1].
+            </p>
+          </div>
         </article>
 
         <!-- ENFJ -->
         <article class="type-detail enfj">
-            <h3>ENFJ <small>배려하는 사교형</small></h3>
-            <div class="box"><h4>여행 성향</h4><p>따뜻한 통찰력으로 타인과 교감하는 낭만 여행을 선호합니다. 스스로 가이드 역할을 자처하며 동행인의 불평 없는 적극적 태도를 원합니다[1].</p></div>
-            <div class="box"><h4>추천 동반자</h4><p><strong>INFP:</strong> 영혼을 채우는 가치관 공유 여행. <strong>ISFP:</strong> 제안에 기쁘게 반응해주는 행복한 여행[1].</p></div>
+          <h3>ENFJ <small>배려하는 사교형</small></h3>
+          <div class="box">
+            <h4>여행 성향</h4>
+            <p>
+              따뜻한 통찰력으로 타인과 교감하는 낭만 여행을 선호합니다. 스스로 가이드 역할을 자처하며 동행인의 불평 없는
+              적극적 태도를 원합니다[1].
+            </p>
+          </div>
+          <div class="box">
+            <h4>추천 동반자</h4>
+            <p>
+              <strong>INFP:</strong> 영혼을 채우는 가치관 공유 여행. <strong>ISFP:</strong> 제안에 기쁘게 반응해주는
+              행복한 여행[1].
+            </p>
+          </div>
         </article>
 
         <!-- ENTJ -->
         <article class="type-detail entj">
-            <h3>ENTJ <small>효율적인 리더형</small></h3>
-            <div class="box"><h4>여행 성향</h4><p>전략적이고 성취 중심적입니다. 남들보다 앞서가는 핫플레이스나 압도적인 스케일의 여행을 정복하고 완수하는 것에서 쾌감을 느낍니다[1].</p></div>
-            <div class="box"><h4>추천 동반자</h4><p><strong>INTP:</strong> 감정 소모 없이 깔끔하고 유능한 지적 여행. <strong>INFJ:</strong> 추진력을 보완하며 질 높은 대화를 나누는 여행[1].</p></div>
+          <h3>ENTJ <small>효율적인 리더형</small></h3>
+          <div class="box">
+            <h4>여행 성향</h4>
+            <p>
+              전략적이고 성취 중심적입니다. 남들보다 앞서가는 핫플레이스나 압도적인 스케일의 여행을 정복하고 완수하는
+              것에서 쾌감을 느낍니다[1].
+            </p>
+          </div>
+          <div class="box">
+            <h4>추천 동반자</h4>
+            <p>
+              <strong>INTP:</strong> 감정 소모 없이 깔끔하고 유능한 지적 여행. <strong>INFJ:</strong> 추진력을 보완하며
+              질 높은 대화를 나누는 여행[1].
+            </p>
+          </div>
         </article>
-    </div>
+      </div>
     </main>
-</body>
-</html>
     <footer>
       <p>© 2026 MapBTravelI by Team 웹 거하라. All Rights Reserved.</p>
       <br />
