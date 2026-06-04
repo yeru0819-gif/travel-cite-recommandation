@@ -482,77 +482,59 @@ input[name='mbti-tab'] {
   border-left: 5px solid #7a9e7e;
   color: #5c3d2e;
 }
+/* travelmap.html 적용 css */ /* travelmap.html 적용 css */
 
-/*TRAVEL MAP PAGE*/
-/* 레이아웃: 지도를 위해 전체 너비를 1600px까지 확장 */
+/* 1. 전체 배경 및 여백 설정 */
+.travelmap-wrapper {
+  background-color: #f5e6da;
+  min-height: 100vh;
+  padding: 80px 0;
+}
+
+/* 라디오 버튼 숨김 */
+.travelmap-container input[type='radio'] {
+  display: none;
+}
+
+/* 2. 메인 틀 */
 .travelmap-layout {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  gap: 60px;
-  padding-top: 80px;
-  max-width: 2000px;
+  gap: 40px;
+  max-width: 1300px;
   margin: 0 auto;
+  padding: 0 20px;
 }
 
-/* 라디오 버튼 숨김 */
-input[name='mbti-map-tab'] {
-  display: none;
-}
-
-/* MBTI 버튼 세로 정렬 컬럼 */
+/* 3. MBTI 버튼 */
 .mbti-column {
   display: flex;
-  flex-direction: column; /* 세로 정렬 고정 */
-  gap: 15px;
+  flex-direction: column;
+  gap: 12px;
   flex: 0 0 140px;
 }
 
 .mbti-column label {
-  color: #5c3d2e; /* 브라운 포인트 컬러 */
-  font-size: 20px;
-  font-weight: bold;
+  background-color: #ffffff;
+  padding: 15px 10px;
+  border-radius: 10px;
   cursor: pointer;
-  padding: 12px;
+  font-weight: bold;
+  color: #5c3d2e;
+  border-bottom: 4px solid #f5e6da;
   text-align: center;
-  transition: all 0.3s ease;
+  font-size: 17px;
+  transition: 0.3s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
 }
 
 .mbti-column label:hover {
+  background-color: #f5e6da;
   color: #7a9e7e;
 }
 
-/* 선택된 버튼 스타일: 올리브 그린으로 강조 */
-#istj:checked ~ .travelmap-layout label[for='istj'],
-#isfj:checked ~ .travelmap-layout label[for='isfj'],
-#infj:checked ~ .travelmap-layout label[for='infj'],
-#entj:checked ~ .travelmap-layout label[for='entj'] {
-  color: #7a9e7e;
-  border-left: 5px solid #7a9e7e;
-  padding-left: 20px;
-  transform: scale(1.05);
-}
-
-/* 중앙 지도 영역 확장 (1000px 확보) */
-.map-display-area {
-  flex: 1;
-  max-width: 2000px;
-  text-align: center;
-}
-
-/* 화면 전환 로직 */
-.default-view {
-  display: block;
-}
-.mbti-view {
-  display: none;
-}
-
-/* 라디오 버튼 체크 시 초기 화면 숨김 및 해당 MBTI 지도 노출 */
-input[name='mbti-map-tab']:checked ~ .travelmap-layout .default-view {
-  display: none;
-}
-/* 1. 선택된 MBTI 버튼을 올리브 그린으로 강조하는 로직 (16개 전체) */
+/* 선택된 MBTI 버튼 강조 */
 #istj:checked ~ .travelmap-layout label[for='istj'],
 #istp:checked ~ .travelmap-layout label[for='istp'],
 #isfj:checked ~ .travelmap-layout label[for='isfj'],
@@ -569,12 +551,67 @@ input[name='mbti-map-tab']:checked ~ .travelmap-layout .default-view {
 #enfj:checked ~ .travelmap-layout label[for='enfj'],
 #entp:checked ~ .travelmap-layout label[for='entp'],
 #entj:checked ~ .travelmap-layout label[for='entj'] {
-  background-color: #7a9e7e; /* 메인 올리브 그린 */
+  background-color: #7a9e7e;
   color: #ffffff;
-  transform: scale(1.1);
+  border-bottom-color: #5c3d2e;
 }
 
-/* 2. 클릭된 MBTI의 전용 지도를 중앙에 노출하는 로직 (16개 전체) */
+/* 4. 지도 표시 영역 */
+.map-display-area {
+  flex: 1;
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  min-height: 700px;
+}
+
+/* 지도 이미지 */
+.map-display-area img,
+.image-frame img {
+  width: 1536px;
+  max-width: 800px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+/* 제목 */
+.title-group h1 {
+  font-size: 2.5rem;
+  color: #5c3d2e;
+  margin-bottom: 5px;
+}
+
+.title-group p {
+  font-size: 1.1rem;
+  color: #7a9e7e;
+  margin-bottom: 30px;
+}
+
+/* ==========================
+   지도 전환
+========================== */
+.map-content {
+  display: none;
+  animation: fadeIn 0.4s ease;
+}
+/* 처음 화면 */
+.default-view {
+  display: block;
+}
+
+/* MBTI 화면들 */
+.mbti-view {
+  display: none;
+}
+
+/* MBTI가 선택되면 기본 화면 숨김 */
+input[name='mbti-map-tab']:checked ~ .travelmap-layout .default-view {
+  display: none;
+}
+
+/* 선택된 MBTI 화면만 표시 */
 #istj:checked ~ .travelmap-layout .istj-view,
 #istp:checked ~ .travelmap-layout .istp-view,
 #isfj:checked ~ .travelmap-layout .isfj-view,
@@ -592,37 +629,20 @@ input[name='mbti-map-tab']:checked ~ .travelmap-layout .default-view {
 #entp:checked ~ .travelmap-layout .entp-view,
 #entj:checked ~ .travelmap-layout .entj-view {
   display: block;
-  animation: fadeIn 0.5s ease; /* 부드럽게 나타나는 효과 */
 }
-
-/* 텍스트 및 지도 이미지 크기 최적화 */
-.map-content h1 {
-  font-size: 3rem;
-  color: #5c3d2e;
-  margin-bottom: 10px;
-}
-.map-content p {
-  font-size: 1.2rem;
-  color: #7a9e7e;
-  margin-bottom: 40px;
-}
-.map-content img {
-  width: 900px; /* 지도를 크게 표시 */
-  height: auto;
-  border-radius: 20px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* 감성적인 그림자 추가 */
-}
-
+/* 애니메이션 */
 @keyframes fadeIn {
   from {
     opacity: 0;
     transform: translateY(10px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
   }
 }
+
 /* MBTI TRAVEL PAGE */
 
 .mbti-page {
