@@ -496,6 +496,11 @@ input[name='mbti-tab'] {
   display: none;
 }
 
+.travelmap-container {
+  padding-top: 60px;
+  padding-bottom: 80px;
+}
+
 /* 2. 메인 틀 */
 .travelmap-layout {
   display: flex;
@@ -504,7 +509,7 @@ input[name='mbti-tab'] {
   gap: 40px;
   max-width: 1300px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 40px 20px 0;
 }
 
 /* 3. MBTI 버튼 */
