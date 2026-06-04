@@ -21,21 +21,34 @@
 
     <main class="travelmap-container">
       <!-- 16가지 MBTI 라디오 버튼 (초기 상태를 위해 checked 없음) -->
-      <input type="radio" name="mbti-map-tab" id="istj" /> <input type="radio" name="mbti-map-tab" id="istp" />
-      <input type="radio" name="mbti-map-tab" id="isfj" /> <input type="radio" name="mbti-map-tab" id="isfp" />
-      <input type="radio" name="mbti-map-tab" id="infj" /> <input type="radio" name="mbti-map-tab" id="infp" />
-      <input type="radio" name="mbti-map-tab" id="intj" /> <input type="radio" name="mbti-map-tab" id="intp" />
-      <input type="radio" name="mbti-map-tab" id="estp" /> <input type="radio" name="mbti-map-tab" id="estj" />
-      <input type="radio" name="mbti-map-tab" id="esfp" /> <input type="radio" name="mbti-map-tab" id="esfj" />
-      <input type="radio" name="mbti-map-tab" id="enfp" /> <input type="radio" name="mbti-map-tab" id="enfj" />
-      <input type="radio" name="mbti-map-tab" id="entp" /> <input type="radio" name="mbti-map-tab" id="entj" />
+      <input type="radio" name="mbti-map-tab" id="istj" />
+      <input type="radio" name="mbti-map-tab" id="istp" />
+      <input type="radio" name="mbti-map-tab" id="isfj" />
+      <input type="radio" name="mbti-map-tab" id="isfp" />
+      <input type="radio" name="mbti-map-tab" id="infj" />
+      <input type="radio" name="mbti-map-tab" id="infp" />
+      <input type="radio" name="mbti-map-tab" id="intj" />
+      <input type="radio" name="mbti-map-tab" id="intp" />
+      <input type="radio" name="mbti-map-tab" id="estp" />
+      <input type="radio" name="mbti-map-tab" id="estj" />
+      <input type="radio" name="mbti-map-tab" id="esfp" />
+      <input type="radio" name="mbti-map-tab" id="esfj" />
+      <input type="radio" name="mbti-map-tab" id="enfp" />
+      <input type="radio" name="mbti-map-tab" id="enfj" />
+      <input type="radio" name="mbti-map-tab" id="entp" />
+      <input type="radio" name="mbti-map-tab" id="entj" />
 
       <div class="travelmap-layout">
         <!-- [왼쪽] MBTI 컬럼 -->
         <div class="mbti-column side-left">
-          <label for="istj">ISTJ</label> <label for="istp">ISTP</label> <label for="isfj">ISFJ</label>
-          <label for="isfp">ISFP</label> <label for="infj">INFJ</label> <label for="infp">INFP</label>
-          <label for="intj">INTJ</label> <label for="intp">INTP</label>
+          <label for="istj">ISTJ</label>
+          <label for="istp">ISTP</label>
+          <label for="isfj">ISFJ</label>
+          <label for="isfp">ISFP</label>
+          <label for="infj">INFJ</label>
+          <label for="infp">INFP</label>
+          <label for="intj">INTJ</label>
+          <label for="intp">INTP</label>
         </div>
 
         <!-- [중앙] 지도 표시 영역 -->
@@ -50,7 +63,7 @@
           <!-- ISTJ 지도 구역 -->
           <div class="map-content mbti-view istj-view">
             <h1>ISTJ 추천 여행지</h1>
-            <p>경주, 전주, 강릉, 공주를 클릭해 보세요.</p>
+            <p>경상북도, 전라북도, 강원도, 충청남도를 클릭해 보세요.</p>
             <img src="map.png" usemap="#istjmap" />
             <map name="istjmap">
               <area shape="rect" coords="843,195,916,239" href="istj/istj_gangwon.html" />
@@ -58,22 +71,10 @@
             </map>
           </div>
 
-          <!-- INFJ 지도 구역 (좌표 반영 예시) -->
-          <div class="map-content mbti-view infj-view">
-            <h1>INFJ 추천 여행지</h1>
-            <p>평창, 순천, 안동, 제주를 클릭해 보세요.</p>
-            <img src="map.png" usemap="#infjmap" />
-            <map name="infjmap">
-              <area shape="rect" coords="843,195,916,239" href="infj/infj_gangwon.html" />
-              <area shape="rect" coords="645,670,722,719" href="infj/infj_jeonnam.html" />
-              <area shape="rect" coords="909,416,986,460" href="infj/infj_gyeongbuk.html" />
-              <area shape="rect" coords="552,874,629,922" href="infj/infj_jeju.html" />
-            </map>
-          </div>
           <!-- ISTP 지도 구역 -->
           <div class="map-content mbti-view istp-view">
             <h1>ISTP 추천 여행지</h1>
-            <p>포항, 태안, 춘천 지역을 클릭해 보세요.</p>
+            <p>경상북도, 충청남도, 강원도 지역을 클릭해 보세요.</p>
             <img src="map.png" usemap="#istpmap" alt="ISTP 추천 지도" />
             <map name="istpmap">
               <area shape="rect" coords="900,450,1000,550" href="istp/istp_pohang.html" />
@@ -85,7 +86,7 @@
           <!-- ISFJ 지도 구역 -->
           <div class="map-content mbti-view isfj-view">
             <h1>ISFJ 추천 여행지</h1>
-            <p>제주, 여수, 통영, 속초 지역을 클릭해 보세요.</p>
+            <p>제주도, 전라남도, 경상남도, 강원도 지역을 클릭해 보세요.</p>
             <img src="map.png" usemap="#isfjmap" alt="ISFJ 추천 지도" />
             <map name="isfjmap">
               <area shape="rect" coords="552,874,629,922" href="isfj/isfj_jeju.html" />
@@ -98,7 +99,7 @@
           <!-- ISFP 지도 구역 -->
           <div class="map-content mbti-view isfp-view">
             <h1>ISFP 추천 여행지</h1>
-            <p>양평, 인천 지역을 클릭해 보세요.</p>
+            <p>경기도, 인천광역시 지역을 클릭해 보세요.</p>
             <img src="map.png" usemap="#isfpmap" alt="ISFP 추천 지도" />
             <map name="isfpmap">
               <area shape="rect" coords="550,250,650,350" href="isfp/isfp_yangpyeong.html" />
@@ -106,10 +107,23 @@
             </map>
           </div>
 
+          <!-- INFJ 지도 구역 (좌표 반영 예시) -->
+          <div class="map-content mbti-view infj-view">
+            <h1>INFJ 추천 여행지</h1>
+            <p>강원도, 전라남도, 경상북도, 제주도를 클릭해 보세요.</p>
+            <img src="map.png" usemap="#infjmap" />
+            <map name="infjmap">
+              <area shape="rect" coords="843,195,916,239" href="infj/infj_gangwon.html" />
+              <area shape="rect" coords="645,670,722,719" href="infj/infj_jeonnam.html" />
+              <area shape="rect" coords="909,416,986,460" href="infj/infj_gyeongbuk.html" />
+              <area shape="rect" coords="552,874,629,922" href="infj/infj_jeju.html" />
+            </map>
+          </div>
+
           <!-- INFP 지도 구역 -->
           <div class="map-content mbti-view infp-view">
             <h1>INFP 추천 여행지</h1>
-            <p>대구, 목포, 울산 지역을 클릭해 보세요.</p>
+            <p>대구광역시, 전라남도, 울산광역시 지역을 클릭해 보세요.</p>
             <img src="map.png" usemap="#infpmap" alt="INFP 추천 지도" />
             <map name="infpmap">
               <area shape="rect" coords="850,550,950,650" href="infp/infp_daegu.html" />
@@ -121,7 +135,7 @@
           <!-- INTJ 지도 구역 -->
           <div class="map-content mbti-view intj-view">
             <h1>INTJ 추천 여행지</h1>
-            <p>서울, 대전, 부산, 수원 지역을 클릭해 보세요.</p>
+            <p>서울특별시, 대전광역시, 부산광역시, 경기도 지역을 클릭해 보세요.</p>
             <img src="map.png" usemap="#intjmap" alt="INTJ 추천 지도" />
             <map name="intjmap">
               <area shape="rect" coords="450,200,550,300" href="intj/intj_seoul.html" />
@@ -134,7 +148,7 @@
           <!-- INTP 지도 구역 -->
           <div class="map-content mbti-view intp-view">
             <h1>INTP 추천 여행지</h1>
-            <p>통영, 과천, 원주 지역을 클릭해 보세요.</p>
+            <p>경상남도, 경기도, 강원도 지역을 클릭해 보세요.</p>
             <img src="map.png" usemap="#intpmap" alt="INTP 추천 지도" />
             <map name="intpmap">
               <area shape="rect" coords="850,700,950,800" href="intp/intp_통영.html" />
@@ -146,7 +160,7 @@
           <!-- ESTP 지도 구역 -->
           <div class="map-content mbti-view estp-view">
             <h1>ESTP 추천 여행지</h1>
-            <p>양양, 단양, 제주(서부) 지역을 클릭해 보세요.</p>
+            <p>강원도, 충청북도, 제주도 지역을 클릭해 보세요.</p>
             <img src="map.png" usemap="#estpmap" alt="ESTP 추천 지도" />
             <map name="estpmap">
               <area shape="rect" coords="800,150,900,250" href="estp/estp_yangyang.html" />
@@ -158,7 +172,7 @@
           <!-- ESTJ 지도 구역 -->
           <div class="map-content mbti-view estj-view">
             <h1>ESTJ 추천 여행지</h1>
-            <p>경주, 부산, 제주, 영종도 지역을 클릭해 보세요.</p>
+            <p>경상북도, 부산광역시, 제주도, 인천광역시 지역을 클릭해 보세요.</p>
             <img src="map.png" usemap="#estjmap" alt="ESTJ 추천 지도" />
             <map name="estjmap">
               <area shape="rect" coords="909,416,986,460" href="estj/estj_gyeongju.html" />
@@ -171,7 +185,7 @@
           <!-- ESFP 지도 구역 -->
           <div class="map-content mbti-view esfp-view">
             <h1>ESFP 추천 여행지</h1>
-            <p>부산, 서울(성수), 제주, 여수 지역을 클릭해 보세요.</p>
+            <p>전라북도, 전라남도, 강원도 지역을 클릭해 보세요.</p>
             <img src="map.png" usemap="#esfpmap" alt="ESFP 추천 지도" />
             <map name="esfpmap">
               <area shape="rect" coords="950,750,1050,850" href="esfp/esfp_busan.html" />
@@ -184,7 +198,7 @@
           <!-- ESFJ 지도 구역 -->
           <div class="map-content mbti-view esfj-view">
             <h1>ESFJ 추천 여행지</h1>
-            <p>전주, 강릉, 여수 지역을 클릭해 보세요.</p>
+            <p>전라북도, 강원도, 전라남도 지역을 클릭해 보세요.</p>
             <img src="map.png" usemap="#esfjmap" alt="ESFJ 추천 지도" />
             <map name="esfjmap">
               <area shape="rect" coords="450,550,550,650" href="esfj/esfj_jeonju.html" />
@@ -196,7 +210,7 @@
           <!-- ENFP 지도 구역 -->
           <div class="map-content mbti-view enfp-view">
             <h1>ENFP 추천 여행지</h1>
-            <p>포항, 고성, 제주, 담양 지역을 클릭해 보세요.</p>
+            <p>강원도, 제주도, 전라남도 지역을 클릭해 보세요.</p>
             <img src="map.png" usemap="#enfpmap" alt="ENFP 추천 지도" />
             <map name="enfpmap">
               <area shape="rect" coords="900,450,1000,550" href="enfp/enfp_pohang.html" />
@@ -209,7 +223,7 @@
           <!-- ENFJ 지도 구역 -->
           <div class="map-content mbti-view enfj-view">
             <h1>ENFJ 추천 여행지</h1>
-            <p>순천, 강릉, 부여, 청주 지역을 클릭해 보세요.</p>
+            <p>충청북도, 전라북도 지역을 클릭해 보세요.</p>
             <img src="map.png" usemap="#enfjmap" alt="ENFJ 추천 지도" />
             <map name="enfjmap">
               <area shape="rect" coords="645,670,722,719" href="enfj/enfj_suncheon.html" />
@@ -222,7 +236,7 @@
           <!-- ENTP 지도 구역 -->
           <div class="map-content mbti-view entp-view">
             <h1>ENTP 추천 여행지</h1>
-            <p>송도, 춘천, 거제, 파주 지역을 클릭해 보세요.</p>
+            <p>인천광역시, 경상남도, 경기도 지역을 클릭해 보세요.</p>
             <img src="map.png" usemap="#entpmap" alt="ENTP 추천 지도" />
             <map name="entpmap">
               <area shape="rect" coords="320,280,420,380" href="entp/entp_songdo.html" />
@@ -235,7 +249,7 @@
           <!-- ENTJ 지도 구역 -->
           <div class="map-content mbti-view entj-view">
             <h1>ENTJ 추천 여행지</h1>
-            <p>잠실, 여의도, 부산, 제주 지역을 클릭해 보세요.</p>
+            <p>서울광역시, 부산광역시, 제주도 지역을 클릭해 보세요.</p>
             <img src="map.png" usemap="#entjmap" alt="ENTJ 추천 지도" />
             <map name="entjmap">
               <area shape="rect" coords="500,230,600,330" href="entj/entj_seoul.html" />
