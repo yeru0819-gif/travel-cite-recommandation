@@ -516,7 +516,7 @@ input[name='mbti-tab'] {
 }
 
 .mbti-column label {
-  background-color: #ffffff;
+  background-color: #f4efe5;
   padding: 15px 10px;
   border-radius: 10px;
   cursor: pointer;
@@ -552,14 +552,14 @@ input[name='mbti-tab'] {
 #entp:checked ~ .travelmap-layout label[for='entp'],
 #entj:checked ~ .travelmap-layout label[for='entj'] {
   background-color: #7a9e7e;
-  color: #ffffff;
+  color: #f4efe5;
   border-bottom-color: #5c3d2e;
 }
 
 /* 4. 지도 표시 영역 */
 .map-display-area {
   flex: 1;
-  background-color: #ffffff;
+  background-color: #f4efe5;
   padding: 40px;
   border-radius: 20px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
