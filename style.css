@@ -483,7 +483,7 @@ input[name='mbti-tab'] {
   color: #5c3d2e;
 }
 
-/* travelmap.html 적용 css */ /* travelmap.html 적용 css */
+/* travelmap.html 적용 css */
 
 .travelmap-wrapper {
   background-color: #f5e6da;
@@ -632,6 +632,51 @@ input[name='mbti-map-tab']:checked ~ .travelmap-layout .default-view {
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+@media (max-width: 1200px) {
+  .travelmap-layout {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  /* MBTI 버튼 영역을 위로 */
+  .side-left,
+  .side-right {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    max-width: 900px;
+    flex: none;
+  }
+
+  .side-left {
+    order: 1;
+  }
+
+  .side-right {
+    order: 2;
+  }
+
+  .map-display-area {
+    order: 3;
+    width: 100%;
+    max-width: 1000px;
+  }
+
+  .side-left label,
+  .side-right label {
+    flex: 0 0 calc(25% - 10px); /* 4개씩 */
+    box-sizing: border-box;
+  }
+
+  .map-display-area img,
+  .image-frame img {
+    width: 100%;
+    max-width: 768px;
+    height: auto;
   }
 }
 
