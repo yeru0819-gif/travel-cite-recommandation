@@ -482,16 +482,15 @@ input[name='mbti-tab'] {
   border-left: 5px solid #7a9e7e;
   color: #5c3d2e;
 }
+
 /* travelmap.html 적용 css */ /* travelmap.html 적용 css */
 
-/* 1. 전체 배경 및 여백 설정 */
 .travelmap-wrapper {
   background-color: #f5e6da;
   min-height: 100vh;
   padding: 80px 0;
 }
 
-/* 라디오 버튼 숨김 */
 .travelmap-container input[type='radio'] {
   display: none;
 }
@@ -501,7 +500,6 @@ input[name='mbti-tab'] {
   padding-bottom: 80px;
 }
 
-/* 2. 메인 틀 */
 .travelmap-layout {
   display: flex;
   justify-content: center;
@@ -512,7 +510,6 @@ input[name='mbti-tab'] {
   padding: 40px 20px 0;
 }
 
-/* 3. MBTI 버튼 */
 .mbti-column {
   display: flex;
   flex-direction: column;
@@ -539,7 +536,6 @@ input[name='mbti-tab'] {
   color: #7a9e7e;
 }
 
-/* 선택된 MBTI 버튼 강조 */
 #istj:checked ~ .travelmap-layout label[for='istj'],
 #istp:checked ~ .travelmap-layout label[for='istp'],
 #isfj:checked ~ .travelmap-layout label[for='isfj'],
@@ -561,7 +557,6 @@ input[name='mbti-tab'] {
   border-bottom-color: #5c3d2e;
 }
 
-/* 4. 지도 표시 영역 */
 .map-display-area {
   flex: 1;
   background-color: #f4efe5;
@@ -571,7 +566,6 @@ input[name='mbti-tab'] {
   min-height: 700px;
 }
 
-/* 지도 이미지 */
 .map-display-area img,
 .image-frame img {
   width: 768px;
@@ -580,7 +574,7 @@ input[name='mbti-tab'] {
   margin: 0 auto;
   border-radius: 10px;
 }
-/* 제목 */
+
 .title-group h1 {
   font-size: 2.5rem;
   color: #5c3d2e;
@@ -593,29 +587,23 @@ input[name='mbti-tab'] {
   margin-bottom: 30px;
 }
 
-/* ==========================
-   지도 전환
-========================== */
 .map-content {
   display: none;
   animation: fadeIn 0.4s ease;
 }
-/* 처음 화면 */
+
 .default-view {
   display: block;
 }
 
-/* MBTI 화면들 */
 .mbti-view {
   display: none;
 }
 
-/* MBTI가 선택되면 기본 화면 숨김 */
 input[name='mbti-map-tab']:checked ~ .travelmap-layout .default-view {
   display: none;
 }
 
-/* 선택된 MBTI 화면만 표시 */
 #istj:checked ~ .travelmap-layout .istj-view,
 #istp:checked ~ .travelmap-layout .istp-view,
 #isfj:checked ~ .travelmap-layout .isfj-view,
@@ -634,7 +622,7 @@ input[name='mbti-map-tab']:checked ~ .travelmap-layout .default-view {
 #entj:checked ~ .travelmap-layout .entj-view {
   display: block;
 }
-/* 애니메이션 */
+
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -647,7 +635,19 @@ input[name='mbti-map-tab']:checked ~ .travelmap-layout .default-view {
   }
 }
 
-/* MBTI TRAVEL PAGE */
+/* 상세 페이지*/
+
+.double-photo-box {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 35px;
+}
+
+.double-photo-box img {
+  width: 50%;
+  border-radius: 20px;
+  display: block;
+}
 
 .mbti-page {
   text-align: center;
@@ -665,10 +665,6 @@ input[name='mbti-map-tab']:checked ~ .travelmap-layout .default-view {
 .map-container {
   text-align: center;
 }
-
-/* =========================
-   REGION DETAIL PAGE
-   ========================= */
 
 .region-page {
   padding: 70px 20px;
@@ -730,17 +726,23 @@ input[name='mbti-map-tab']:checked ~ .travelmap-layout .default-view {
   padding-left: 25px;
   line-height: 2;
 }
-
-/* 상세 페이지 사진 2장 배치 */
-
-.double-photo-box {
+.course-item {
   display: flex;
-  gap: 20px;
-  margin-bottom: 35px;
+  align-items: center;
+  gap: 30px;
+  margin-top: 30px;
 }
 
-.double-photo-box img {
-  width: 50%;
+.course-item img {
+  width: 45%;
   border-radius: 20px;
   display: block;
+}
+
+.course-text {
+  flex: 1;
+}
+
+.course-item.reverse {
+  flex-direction: row-reverse;
 }
