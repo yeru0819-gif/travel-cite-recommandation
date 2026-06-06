@@ -635,6 +635,9 @@ input[name='mbti-map-tab']:checked ~ .travelmap-layout .default-view {
   }
 }
 @media (max-width: 1200px) {
+  .title-group {
+    text-align: center;
+  }
   .travelmap-layout {
     flex-direction: column;
     align-items: center;
@@ -662,20 +665,23 @@ input[name='mbti-map-tab']:checked ~ .travelmap-layout .default-view {
   .map-display-area {
     order: 3;
     width: 100%;
-    max-width: 1000px;
+    min-width: 850px;
+    overflow-x: auto;
+
+    box-sizing: border-box;
+  }
+  .map-display-area img,
+  .image-frame img {
+    width: 768px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
   }
 
   .side-left label,
   .side-right label {
     flex: 0 0 calc(25% - 10px);
     box-sizing: border-box;
-  }
-
-  .map-display-area img,
-  .image-frame img {
-    width: 100%;
-    max-width: 768px;
-    height: auto;
   }
 }
 
