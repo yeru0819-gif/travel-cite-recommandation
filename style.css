@@ -641,7 +641,6 @@ input[name='mbti-map-tab']:checked ~ .travelmap-layout .default-view {
     gap: 20px;
   }
 
-  /* MBTI 버튼 영역을 위로 */
   .side-left,
   .side-right {
     flex-direction: row;
@@ -668,7 +667,7 @@ input[name='mbti-map-tab']:checked ~ .travelmap-layout .default-view {
 
   .side-left label,
   .side-right label {
-    flex: 0 0 calc(25% - 10px); /* 4개씩 */
+    flex: 0 0 calc(25% - 10px);
     box-sizing: border-box;
   }
 
